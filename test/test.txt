@@ -1,0 +1,21 @@
+something
+--
+---
+foo: true
+bar: dingo
+---
+
+text
+
+```sh
+command arg1 arg2
+```
+
+```python
+print("hello world")
+```
+
+## some markdown
+    ### headings
+
+```sh foobar```

@@ -1,0 +1,8 @@
+.venv
+.vscode
+build
+test/__pycache__
+txtobj/__pycache__
+txtobj/parsing/__pycache__
+txtobj/parsing.cpython-312-x86_64-linux-gnu.so
+txtobj.egg-info
