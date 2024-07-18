@@ -5,7 +5,7 @@ TEST_PATH = Path(__file__).parent / "test.txt"
 
 
 def test_get_block_bounds_finds_block():
-    with parsing.get_block_bounds(TEST_PATH, "---\n", "\n---") as bounds:
+    with parsing.blocks(TEST_PATH, "---\n", "\n---") as bounds:
         a, b = bounds[0]
 
         with open(TEST_PATH, "rb") as f:
@@ -24,7 +24,7 @@ def blocks(path, bounds):
 
 
 def test_get_block_bounds_finds_multple_blocks():
-    with parsing.get_block_bounds(TEST_PATH, "```", "```") as bounds:
+    with parsing.blocks(TEST_PATH, "```", "```") as bounds:
         assert len(bounds) == 3
         values = [
             entry

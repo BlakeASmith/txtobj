@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ls txtobj/parsing/src/*.c test/* | entr ./test.sh
+ls txtobj/parsing/src/*.c test/*  txtobj/*.py| entr ./test.sh

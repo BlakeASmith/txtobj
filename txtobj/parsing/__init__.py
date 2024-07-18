@@ -44,7 +44,7 @@ __free_bounds.argtypes = [_BoundsList]
 
 
 @contextmanager
-def get_block_bounds(
+def blocks(
     path: os.PathLike,
     start_token: str,
     end_token: str,
